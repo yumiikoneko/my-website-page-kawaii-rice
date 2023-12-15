@@ -1,0 +1,41 @@
+.drinks-menu-items{
+    background-color: rgb(2, 105, 128);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.drinks-text{ 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    font-family: cursive;
+}
+
+.opis-napoje {
+    background-color: rgb(178, 205, 231);
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu-item {
+    margin: 20px 0;
+    text-align: center;
+    max-width: calc(50% - 40px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
+    color: rgb(24, 73, 88);
+    font-size: 35px;
+  }
+
+  .drink-cinnamoroll-strawberry-text{ 
+    color: rgb(6, 0, 11);
+    font-family: 'Lobster'
+  }

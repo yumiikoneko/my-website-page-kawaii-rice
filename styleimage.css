@@ -1,0 +1,70 @@
+.body-area {
+    padding: 20px; 
+    display: grid;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px; 
+    margin-bottom: 20px;
+  }
+  
+  .image {
+    border-radius: 20px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.1); 
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-main { 
+    color: rgb(12, 51, 87);
+    font-family:cursive;
+    font-size: 40px;
+  }
+
+  .image-kotek-main { 
+    justify-content: center;
+    text-align: center;
+  }
+  .image-kotek-main img { 
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .image-kotek-main img:hover {
+    animation: bounce 0.4s ease infinite;
+  }
+
+
+  /* ---------------------------------------- */
+  .menu-block { 
+    text-align: center;
+    justify-items: flex-start;
+  }
+
+  .menu-block img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menu-block img:hover {
+    animation: bounce 0.4s ease infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  

@@ -1,0 +1,95 @@
+body { 
+    margin: 0;
+    padding: 0;
+    background-color: rgb(197, 255, 248);
+  }
+  
+  .navbar { 
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo { 
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo img { 
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .navstyle {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .navstyle li {
+    margin: 0;
+    position: relative;
+  }
+  
+  .navstyle a {
+    text-decoration: none;
+    color: rgba(41, 91, 156, 255);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: rgba(41, 91, 156, 255);
+    font-size: 30px;
+    font-family: serif;
+    transition: background-color 0.3s ease;
+  }
+
+  
+  .navstyle a:hover {
+    background-color: rgba(54, 152, 226, 0.2);
+  }
+
+  .navstyle li:hover .submenu {
+    display: block;
+  }
+
+  .body-area-text { 
+  text-shadow: 0 0 5px #096b8c, 0 0 15px #096b8c, 0 0 20px #096b8c, 0 0 40px #096b8c, 0 0 60px #791dc5, 0 0 10px #096b8c, 0 0 98px #7a24f4;
+  color: #ffffff;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+  font-size: 30px; 
+  }
+
+  @font-face {
+    font-family: 'Lobster';
+    src: url(cute-fonts/Lobster\ Regular\ 400.ttf);
+  }
+
+
+  
+  
+
+  
+
+ 
+  
+
+  
+
+  
+
+
+  
+
+
+
+

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kawaii Rice</title>
+  <link rel="stylesheet" href="stylenavstyle.css">
+  <link rel="stylesheet" href="styleimage.css">
+  <link rel="stylesheet" href="stylemenu.css">
+  <link rel="stylesheet" href="menu-breakfast.css">
+  <link rel="stylesheet" href="menu-lunch.css">
+  <link rel="stylesheet" href="menu-dessert.css">
+  <link rel="stylesheet" href="menu-drinks.css">
+  <link rel="icon" href="logo-kawaii-rice-fish.png">
+</head>
+<body>
+  
+<div class="navbar">
+  <div class="logo" onclick="refreshPage()"> <img src="kawaii-rice-logo.png" alt=""></div>
+<div class="nav">
+  <ul class="navstyle">
+    <li> <a href="#">Główna</a></li>
+    <li> <a href="#">O nas</a></li>
+    <li><a href="#" id="menuLink" onclick="toggleMenuMain()">Menu</a></li>
+    <li> <a href="#">Galeria</a></li>
+    <li> <a href="#">Blog</a></li>
+    <li> <a href="#">Rezerwacje</a></li>
+    <li> <a href="#"><img src="logo-cart-blue.png" alt="logo-koszyka" width="30" height="30"></a></li>
+    </ul>
+  </div>
+  </div>
+
+
+      <div class="menu-area" id="menuArea" style="display: none;">
+
+        <ul class="menu-categories">
+          <li><a href="#sniadania" onclick="showMenu('sniadania')">Śniadania</a></li>
+          <li><a href="#obiady" onclick="showMenu('obiady')">Obiady</a></li>
+          <li><a href="#desery" onclick="showMenu('desery')">Desery</a></li>
+          <li><a href="#napoje" onclick="showMenu('napoje')">Napoje</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-main" id="menuMain" style="display: none;">
+        <div class="menu-block">
+           <img src="cute-cat-eating-fish-cutie.png" alt="slodki-kotek-jedzący-rybke" class="bounce">
+         </div>
+      </div>
+
+      <div class="body-area" id="bodyArea">
+        <div class="body-area-main"> </div>
+        <div class="text-main">
+          "Kiedy otwierasz drzwi do naszego kawaii świata, 
+          wkroczysz w krainę kulinarnych cudów, 
+          gdzie smak i wygląd spotykają się w harmonii.
+          Nasze wyjątkowe potrawy nie tylko urzekają urodą,
+          ale też skradają serca swoją niezrównaną finezją smakową.
+          Każdy kęs to podróż przez czystą przyjemność, gdzie łączą się smaki,
+          które wnoszą radość i ożywiają zmysły. Gotowi na wyjątkowe doznania?"
+        </div>
+
+        <div class="image-kotek-main">
+          <img src="blue-cat-cute.png" alt="">
+        </div>
+
+        <div class="gallery">
+          <div class="image">
+            <img src="dessert-bear-tiramisu.png" alt="Opis zdjęcia 1">
+          </div>
+          <div class="image">
+            <img src="breakfast-cinnamoroll-pancakes.png" alt="Opis zdjęcia 2">
+          </div>
+          <div class="image">
+            <img src="dessert-bear-cupcake.png" alt="Opis zdjęcia 3">
+          </div>
+          <div class="image">
+            <img src="drink-cinnamoroll-strawberry.png" alt="Opis zdjęcia 4">
+          </div>
+        </div>
+       
+      </div>
+      
+
+      <div class="menu-content" id="sniadaniaContent" style="display:none;">
+        <div class="breakfast-menu-items">
+          <div class="breakfast-text">Rozpocznij dzień od naszych wyjątkowych dań śniadaniowych</div>
+          <div class="opis-sniadania">
+            <div class="menu-item">
+              <img src="breakfast-bears-pancakes.png" alt="Nazwa dania 1">
+              <p class="breakfast-bears-pancakes-text"> Naleśniki Misie z płatkami</p>
+              <p>Cena: 25 PLN</p>
+            </div>
+            <div class="menu-item">
+              <img src="breakfast-bears-serniczek.png" alt="Nazwa dania 2">
+              <p class="breakfast-bears-serniczek-text"> Serniczek Miś</p>
+              <p>Cena: 20 PLN</p>
+            </div>
+            <div class="menu-item">
+              <img src="breakfast-bunny.png" alt="Nazwa dania 3">
+              <p class="breakfast-bunny-text"> Naleśniki Króliczki </p>
+              <p>Cena: 25 PLN</p>
+            </div>
+            <div class="menu-item">
+              <img src="breakfast-bears-brown-pancakes.png" alt="Nazwa dania 4">
+              <p class="breakfast-bears-brown-pancakes-text"> Naleśniki Brązowe Misie </p>
+              <p>Cena: 25 PLN</p>
+            </div>
+            <div class="menu-item">
+              <img src="breakfast-cinnamoroll-pancakes.png" alt="Nazwa dania 5">
+              <p class="breakfast-cinnamoroll-pancakes-text"> Naleśniki Cinnamoroll </p>
+              <p>Cena: 25 PLN</p>
+            </div>
+            <div class="menu-item">
+              <img src="breakfast-pompurin-cute.png" alt="Nazwa dania 6">
+              <p class="breakfast-pompurin-cute-text"> Naleśniki Pompurin </p>
+              <p>Cena: 25 PLN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-content" id="obiadyContent" style="display:none;">
+        <div class="lunch-menu-items">
+        <div class="lunch-text">Spróbuj naszych smakowitych obiadów</div>
+        <div class="opis-obiad">
+          <div class="menu-item">
+            <img src="sanrio-kuromi-mymelody-rice.png" alt="Nazwa dania 1">
+            <p class="sanrio-kuromi-mymelody-rice-text"> Bento Kuromi-My Melody</p>
+            <p>Cena: 40 PLN</p>
+          </div>
+          <div class="menu-item">
+            <img src="sanrio-hello-kitty-bento.png" alt="Nazwa dania 2">
+            <p class="sanrio-hello-kitty-bento-text"> Bento Hello Kitty</p>
+            <p>Cena: 40 PLN</p>
+          </div>
+          <div class="menu-item">
+            <img src="anime-pokemon-pikachu-rice.png" alt="Nazwa dania 3">
+            <p class="anime-pokemon-pikachu-rice-text"> Bento Pikachu</p>
+            <p>Cena: 40 PLN</p>
+          </div>
+            <div class="menu-item">
+              <img src="sario-friends-bento.jpg" alt="Nazwa dania 4">
+              <p class="sario-friends-bento-text"> Bento Sanrio Przyjaciele </p>
+              <p>Cena: 40 PLN</p>
+            </div>
+            <div class="menu-item">
+              <img src="sanrio-penguin-rice.jpg" alt="Nazwa dania 5">
+              <p class="sanrio-penguin-rice-text"> Bento Tuxedo Sam  </p>
+              <p>Cena: 40 PLN</p>
+            </div>
+            <div class="menu-item">
+              <img src="sanrio-rice-on-sticks.png" alt="Nazwa dania 6">
+              <p class="sanrio-rice-on-sticks"> Ryż na patyczkach </p>
+              <p>Cena: 40 PLN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="menu-content" id="deseryContent" style="display:none;">
+          <div class="dessert-menu-items">
+            <div class="dessert-text">Wyjątkowe słodkości dla Twojego podniebienia</div>
+            <div class="opis-deser">
+              <div class="menu-item">
+                <img src="dessert-cinnamoroll-cupcake.png" alt="Nazwa dania 1">
+            <p class="dessert-cinnamoroll-cupcake-text"> Muffinki Cinnamoroll </p>
+            <p>Cena: 20 PLN</p>
+                </div>
+                <div class="menu-item">
+                  <img src="dessert-bear-cupcake.png" alt="Nazwa dania 2">
+              <p class="dessert-bear-cupcake-text"> Muffinki Czekoladowe Misie </p>
+              <p>Cena: 20 PLN</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="dessert-cookies-egg.png" alt="Nazwa dania 3">
+                <p class="dessert-cookies-egg-text"> Mini Ciastka - Jajka </p>
+                <p>Cena: 20 PLN</p>
+                    </div>
+                    <div class="menu-item">
+                      <img src="dessert-bear-tiramisu.png" alt="Nazwa dania 4">
+                <p class="dessert-bear-tiramisu-text"> Tiramisu - Czekoladowe Misie </p>
+                <p>Cena: 20 PLN</p>
+                  </div>
+                  <div class="menu-item">
+                  <img src="dessert-bear-on-cake.png" alt="Nazwa dania 4">
+                <p class="dessert-bear-on-cake-text"> Truskawkowy Torcik z Misiem </p>
+                <p>Cena: 20 PLN</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="dessert-bears-mochi.png" alt="Nazwa dania 4">
+                  <p class="dessert-bears-mochi-text"> Duże Mochi - Misie </p>
+                  <p>Cena: 20 PLN</p>
+                    </div>
+                
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-content" id="napojeContent" style="display:none;">
+          <div class="drinks-menu-items">
+            <div class="drinks-text">Napoje, które uwiodą Twój smak</div>
+            <div class="opis-napoje">
+              <div class="menu-item">
+                <img src="drink-bears-lemonade.png" alt="Nazwa dania 1">
+            <p class="sanrio-kuromi-mymelody-rice-text"> Lemoniada z Misiami </p>
+            <p>Cena: 25 PLN</p>
+                </div>
+                <div class="menu-item">
+                  <img src="drink-cinnamoroll-and-penguin.png" alt="Nazwa dania 1">
+              <p class="sanrio-kuromi-mymelody-rice-text"> Bubble Tea Sanrio </p>
+              <p>Cena: 25 PLN</p>
+                  </div>
+                  <div class="menu-item">
+                    <img src="drink-cinnamoroll-strawberry.png" alt="Nazwa dania 1">
+                <p class="drink-cinnamoroll-strawberry-text"> Truskawkowy Koktajl Cinnamoroll </p>
+                <p>Cena: 25 PLN</p>
+                    </div>
+              
+            </div>
+          </div>
+        </div>
+
+
+
+  <div class="footer">
+    
+    
+  </div> 
+
+<script> 
+
+function refreshPage() {
+    window.location.reload();
+  }
+
+const menuLink = document.getElementById('menuLink');
+const bodyArea = document.getElementById('bodyArea');
+const menuArea = document.getElementById('menuArea');
+const menuMain = document.getElementById('menuMain');
+const homeLink = document.querySelector('a[href="#"]');
+
+menuLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  bodyArea.style.display = 'none';
+  menuArea.style.display = 'block';
+});
+
+homeLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  bodyArea.style.display = 'block';
+  menuArea.style.display = 'none';
+});
+
+// ------------------------------------------------------------------------- //
+function showMenu(category) {
+  console.log('Wywołano showMenu dla kategorii:', category);
+  const allMenuContents = document.querySelectorAll('.menu-content');
+  allMenuContents.forEach(content => {
+    content.style.display = 'none';
+  });
+
+  const selectedContent = document.getElementById(`${category}Content`);
+  console.log(selectedContent);
+
+  if (selectedContent) {
+    selectedContent.style.display = 'block';
+  }
+
+  const categoriesToHide = ['obiady', 'sniadania', 'desery', 'napoje'];
+  if (categoriesToHide.includes(category)) {
+    bodyArea.style.display = 'none';
+    menuMain.style.display = 'none';
+
+  } else {
+    bodyArea.style.display = 'block';
+    menuMain.style.display = 'block'
+  }
+}
+
+function toggleMenuMain() {
+  const menuMain = document.getElementById('menuMain');
+  menuMain.style.display = menuMain.style.display === 'none' ? 'block' : 'none';
+}
+
+function hideMenuMain() {
+  const menuMain = document.getElementById('menuMain');
+  menuMain.style.display = 'none';
+};
+
+</script>
+
+</body>
+</html>
+
+
+
